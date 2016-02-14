@@ -1,0 +1,10 @@
+title: Zach Starkebaum
+email: ztzach@gmail.com
+description: >
+baseurl: ""
+url: "http://rebelzach.github.io"
+twitter_username: rebelzach
+github_username:  rebelzach
+
+# Build settings
+markdown: kramdown
