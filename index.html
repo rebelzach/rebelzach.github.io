@@ -4,22 +4,35 @@ layout: default
 
 <div class="home">
 
-  
+  <div class="header">
+    <div class="bio-container">
+      <img class="img-bio" src="/img/zach-starkebaum.jpg" alt="A really swell picture of Zach">
+      <div class="bio-content">
+        <h2 class="home-heading">Hi, I'm Zach</h2>
+        <h3 class="home-heading">I work hard to make great software.</h3>
+        Focused on Mobile Development, especially
+        with iOS and Cross Platform C#/Mono. Experience with Full Stack Web Development in Node.js, PHP and HTML5/CSS.
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <h2 class="home-heading">Portfolio</h2>
 
-  <h1 class="page-heading">Posts</h1>
+    {% for project in site.portfolio_items %}
+      <div class="project-headPhotos">
+        {% for photo in project.photos %}
+          <div class="project-headPhoto" style="background-image: url('{{ photo.url }}');">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+        {% endfor %}
+        <div class="photo-heading">
+          <h2>{{ project.title }}</h2>
+          {{ project.technologies }}<br>
+          {{ project.role }}
+        </div>
+      </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      <div class="project-content">{{ project.content }}</div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>

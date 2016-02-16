@@ -1,5 +1,5 @@
 title: Zach Starkebaum
-email: ztzach@gmail.com
+email: zach@relevantwalk.com
 description: >
 baseurl: ""
 url: "http://rebelzach.github.io"
@@ -8,3 +8,6 @@ github_username:  rebelzach
 
 # Build settings
 markdown: kramdown
+
+collections:
+- portfolio_items
