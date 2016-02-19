@@ -8,4 +8,4 @@ photos:
 ---
 Used as part of a summer camp training program. Leads students on a grueling hike using only beeps to keep them on course.
 
-Available on [Github](https://github.com/rebelzach/GPS-Follow-The-Leader)
+[Available on Github](https://github.com/rebelzach/GPS-Follow-The-Leader)
