@@ -1,0 +1,14 @@
+<div class="project-headPhotos">
+  {% for photo in project.photos %}
+    <div class="project-headPhoto" style="background-image: url('{{ photo.url }}');">
+
+    </div>
+  {% endfor %}
+  <div class="photo-heading">
+    <h2>{{ project.title }}</h2>
+    {{ project.technologies }}<br>
+    {{ project.role }}
+  </div>
+</div>
+
+<div class="project-content">{{ project.content }}</div>

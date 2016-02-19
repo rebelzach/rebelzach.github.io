@@ -11,3 +11,4 @@ markdown: kramdown
 
 collections:
 - portfolio_items
+- side_projects
